@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/mediaquery.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!--========== SWIPER CSS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+        <!--========== SWIPER JS ==========-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Landing Page</title>
+  </head>
+
+  <body>
+    <!--========== HEADER ==========-->
+
+    <header>
+      <nav class="nav">
+        <div class="nav-options-container">
+         <div class="nav-logo-container">
+          <a href="#" class="nav-logo"
+          ><img src="./assets/img/cognira-logo.png" alt="Logo Image" id="logo-img"
+        /></a><p>cognira</p>
+         </div>
+          <div class="nav-item"><a href="#">Detect</a></div>
+          <div class="nav-item"><a href="#">For Caregivers</a></div>
+          <div class="nav-item"><a href="#">Contact Us</a></div>
+          <div class="nav-item">
+            <a href="games/games.html">Games<i class="fa-solid fa-angle-down"></i> </a>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="button log-in-btn">Log In</button>
+          <button class="button sign-up-btn">Sign Up Now</button>
+        </div>
+
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="dropdown-menu">
+          <div class="dropdown-list-container nav-menu">
+            <div class="nav-options-container dropdown-options-container">
+              <div class="nav-item dd-item"><a href="#">Detect</a></div>
+              <div class="nav-item dd-item"><a href="#">For Caregivers</a></div>
+              <div class="nav-item dd-item"><a href="#">Contact Us</a></div>
+              <div class="nav-item dd-item">
+                <a href="games/games.html"
+                  >Games <i class="fa-solid fa-angle-down"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-buttons dd-buttons">
+            <button class="button log-in-btn dd-log-in-btn">Log In</button>
+            <button class="button sign-up-btn">Sign Up Now</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--========== MAIN ==========-->
+
+    <main>
+      <!--========== HOME SECTION ==========-->
+
+      <section class="home-section">
+        <div class="section-container home-container">
+          <div class="content-container home-content-container">
+            <div class="data">
+              <div class="home-title">
+                <p>Empower
+                  <span id="t-underline">Alzheimer's <span class="underline"><img src="./assets/img/home/textUnderline.svg" alt="" /></span></span>Patients Worldwide
+                </p>
+              </div>
+              <p class="home-info">
+                Cognira combines early detection tools and cognitive therapy games to improve the quality of life for Alzheimer's patients. Our platform offers engaging ways to track and stimulate cognitive function.
+              </p>
+              <div class="home-buttons">
+                <button class="button home-sign-up-btn">Sign Up Now</button>
+                <button class="button home-view-demo-btn">
+                  <i class="fa-regular fa-circle-play"></i> Watch Demo
+                </button>
+              </div>
+            </div>
+            <div class="home-footer">
+              <p>
+                Trusted by <br /> leading companies
+              </p>
+              <img src="./assets/img/home/footer-icon1.svg" alt="Footer Icon" class="home-footer-img"/>
+              <img src="./assets/img/home/footer-icon2.svg" alt="Footer Icon" class="home-footer-img"
+              />
+              <img src="./assets/img/home/footer-icon3.svg" alt="Footer Icon" class="home-footer-img"/>
+              <img src="./assets/img/home/footer-icon4.svg" alt="Footer Icon"class="home-footer-img"/>
+              <img src="./assets/img/home/footer-icon5.svg" alt="Footer Icon" class="home-footer-img" />
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="teacher-img-container">
+              <img id="teacher" src="./assets/img/home/Teacher.svg" alt="Teacher" />
+            </div>
+            <div class="chats-img-container">
+              <img id="chats" src="./assets/img/home/chat.svg" alt="Chat Image" />
+            </div>
+            <div class="student-img-container">
+              <img id="student" src="./assets/img/home/Student.svg" alt="Student"/>
+            </div>
+            <div class="icons-img-container">
+              <img id="icons" src="./assets/img/home/icons.svg" alt="Icons Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========== TOOLS SECTION ==========-->
+
+      <section class="tools-section">
+        <div class="tools-section-container">
+          <div class="content-container tools-content-container">
+            <div class="data">
+              <div class="title">
+                <p>All the games you need for cognitive health</p>
+              </div>
+              <p class="info">
+                Cognira offers a wide range of interactive games designed to stimulate cognitive function and slow the progression of Alzheimer's. These scientifically backed games are fun, engaging, and adaptable to the specific needs of each patient, helping them stay mentally active and sharp.
+              </p>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <img
+              class="dekstop"
+              src="./assets/img/tools/Desktop.svg"
+              alt="Desktop"
+            />
+            <img
+              class="bg1"
+              src="./assets/img/tools/bg1.svg"
+              alt="Background Image"
+            />
+            <img
+              class="bg2"
+              src="./assets/img/tools/bg2.svg"
+              alt="Background Image"
+            />
+          </div>
+
+          <div class="tools-icons-container">
+            <div class="tools-icon-slide">
+              <img src="./assets/img/tools/icon1.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon2.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon3.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon4.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon5.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon6.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon7.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon8.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon9.svg" alt="Icon"class="tools-icon"/>
+            </div>
+
+            <div class="tools-icon-slide">
+              <img src="./assets/img/tools/icon1.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon2.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon3.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon4.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon5.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon6.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon7.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon8.svg" alt="Icon"class="tools-icon"/>
+              <img src="./assets/img/tools/icon9.svg" alt="Icon"class="tools-icon"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!--========== FEATURES SECTION========-->
+
+      <section class="features-section">
+
+        <div class="section-container feature-section-container">
+          <div class="content-container features-content-container">
+            <div class="features-title title">
+              <p> An all-in-one app that makes Alzheimer care easier
+              </p>
+            </div>
+            <div class="feature-list-container">
+              <ul>
+                <li class="features"><i class="fa-solid fa-check"></i>Early detection for better care management</li>
+                <li class="features"><i class="fa-solid fa-check"></i>Fun and engaging games designed for cognitive stimulation</li>
+                <li class="features"><i class="fa-solid fa-check"></i>Tools that help caregivers stay informed and connected</li>
+              </ul>
+            </div>
+
+            <a href="#">Find more about the website <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+  
+          <div class="features-frame-container">
+            <div class="features-bg-container">
+              <img id="features-bg" src="./assets/img/features/bg.svg" alt="Background">
+            </div>
+            <div class="features-sparkle-container">
+              <img id="features-sparkle" src="./assets/img/features/sparkle.svg" alt="Background">
+            </div>
+            <div class="features-desktop-container">
+              <img id="features-desktop" src="./assets/img/features/Desktop.svg" alt="Desktop">
+            </div>
+            <div class="features-card-container">
+              <div class="feature-card">
+                <p class="feature-card-title" >Early Detection Tools</p>
+                <p class="feature-card-info" >Detect Alzheimer's symptoms before they progress and take proactive steps toward care.</p>
+                <button class="feature-card-button button" >Detect</button>
+              </div>
+
+              <div class="feature-card">
+                <p class="feature-card-title" >Engaging Cognitive Games</p>
+                <p class="feature-card-info" >Boost memory, focus, and mental agility with fun, scientifically designed games. </p>
+                <a href="games/games.html" id="feature-card-play-button" class="feature-card-button button">Play</a>
+              </div>
+
+              <div class="feature-card">
+                <p class="feature-card-title" >Learn About Alzheimer's</p>
+                <p class="feature-card-info" >Discover key facts about Alzheimer's, from early signs to research developments.</p>
+                <button class="feature-card-button button" >Discover</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!--========== CARDS SECTION ==========-->
+
+      <section class="cards-section">
+        <div class="section-container cards-section-container">
+          <div class="first-row-container">
+            <p class="cards-section-title">What We Offer</p>
+
+            <div class="card-nav-buttons">
+              <button class="prev-btn card-arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="next-btn card-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!--========== SWIPER ==========-->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+             <!--========== CARDS ==========-->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img-container">
+                    <img src="./assets/img/cards/card-img1.jpeg" alt="">
+                  </div>
+                  <p class="card-title">Alzheimer Detection Tools</p>
+                  <p class="card-info">
+                    Easily assess your cognitive health using our intuitive tools designed for early detection. Track changes over time with clear reports that help you understand your cognitive strengths and areas that need improvement.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="games/games.html" class="card-link">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="./assets/img/cards/card-img1.jpeg" alt="">
+                        </div>
+                        <p class="card-title">Interactive Games</p>
+                        <p class="card-info">
+                            Challenge your brain with interactive games that boost memory, attention, and problem-solving skills. These games are designed to be fun and adaptive, keeping you engaged while supporting cognitive well-being.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img-container">
+                    <img src="./assets/img/cards/card-img1.jpeg" alt="">
+                  </div>
+                  <p class="card-title">Progress Tracking</p>
+                  <p class="card-info">
+                    Monitor your cognitive health with personalized progress reports. Track daily and weekly improvements, helping you stay informed and take action when needed.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img-container">
+                    <img src="./assets/img/cards/card-img1.jpeg" alt="">
+                  </div>
+                  <p class="card-title">Caregiver's Guide</p>
+                  <p class="card-info">
+                    Our dedicated caregiver's guide provides essential tips and emotional support to help you care for individuals with Alzheimer's. Learn how to create effective routines and manage daily challenges.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img-container">
+                    <img src="./assets/img/cards/card-img1.jpeg" alt="">
+                  </div>
+                  <p class="card-title">How We Work</p>
+                  <p class="card-info">
+                    Understand the science and design behind our platform. We combine cognitive assessments and engaging games, using a personalized approach to support brain health.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img-container">
+                    <img src="./assets/img/cards/card-img1.jpeg" alt="">
+                  </div>
+                  <p class="card-title">Learn About Alzheimer's</p>
+                  <p class="card-info">
+                    Get the latest information on Alzheimer's, from symptoms to treatments. Our resources help you stay informed, empowering you to make better decisions for yourself or loved ones."
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img-container">
+                    <img src="./assets/img/cards/card-img1.jpeg" alt="">
+                  </div>
+                  <p class="card-title">Personalized Care</p>
+                  <p class="card-info">
+                    Experience care that's tailored to your specific needs. Our platform provides recommendations based on your progress, helping you get the most out of your cognitive health journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========== SIGN-UP SECTION ==========-->
+
+      <section class="sign-up-section">
+        <div class="section-container sign-up-section-container">
+          <div class="content-container sign-up-content-container">
+            <div class="data">
+              <div class="title">
+                <p>Ready to Get Started?</p>
+              </div>
+              <p class="info">
+                Take a step towards better cognitive health and personalized care for Alzheimer's patients.
+              </p>
+              <button class="button home-sign-up-btn section-sign-up-btn">
+                Sign Up Now
+              </button>
+            </div>
+          </div>
+          <div class="sign-up-section-bg-images">
+            <div class="signup-bg1-container">
+              <img
+                id="signup-bg1"
+                src="./assets/img/signup/bg1.svg"
+                alt="Background Image"
+              />
+            </div>
+            <div class="signup-bg2-container">
+              <img
+                id="signup-bg2"
+                src="./assets/img/signup/bg2.svg"
+                alt="Background Image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+
+    <footer class="footer">
+      <div class="footer-container section-container">
+        <div class="container-one">
+          <div class="nav-logo-container">
+            <a href="#" class="nav-logo"
+            ><img src="./assets/img/cognira-logo.png" alt="Logo Image" id="logo-img"
+          /></a><p>cognira</p>
+           </div>
+
+          <div class="footer-options-container">
+            <div class="footer-list">
+              <label for="">Home</label>
+            </div>
+  
+            <div class="footer-list">
+              <label for="">About Us</label>
+            </div>
+  
+            <div class="footer-list">
+              <label for="">Our Customers</label>
+            </div>
+  
+            <div class="footer-list">
+              <label for="">For Caregivers</label>
+            </div>
+  
+            <div class="footer-list">
+              <label for="">Testimonials</label>
+            </div>
+  
+            <div class="footer-list">
+              <label for="">How We Work</label>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container-two">
+          <div class="footer-para">
+            <p>cognira @ 2024. All rights reserved.</p>
+          </div>
+          <div class="footer-list-container">
+            <span class="footer-list-item">Terms</span>
+            <span class="footer-list-item">Privacy</span>
+            <span class="footer-list-item">Contact</span>
+            <span class="footer-list-item"
+              ><i class="fa-solid fa-globe"></i>EN</span
+            >
+            <span class="footer-list-item">
+              <i class="fa-solid fa-euro-sign"></i> EUR</span
+            >
+            <span class="footer-list-item"><i class="fa-solid fa-person"></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== SCRIPT ==========-->
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const dropDownMenu = document.querySelector(".dropdown-menu");
+
+       toggleBtn.onclick = function () {
+        if (dropDownMenu.classList.contains("open")) {
+          dropDownMenu.classList.remove("open");
+        } else {
+          dropDownMenu.classList.add("open");
+        }
+      };
+    </script>
+
+    <script src="./assets/js/script.js"></script>
+
+  </body>
+</html>

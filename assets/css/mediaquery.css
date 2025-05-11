@@ -1,0 +1,699 @@
+
+/*========== MEDIA QUERY FOR SCREEN SIZE TILL 1550 ==========*/
+@media only screen and (max-width: 1550px) {
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --biggest-font-size: 4.4rem;
+        --h1-font-size: 4rem;
+        --normal-font-size: 1.4rem;
+        --small-font-size: 1.1rem;
+        --small-font-size-secondary: 1rem;
+    }
+
+    .home-footer {
+        gap: 1rem;
+    }
+
+    .home-footer img {
+        transform: scale(1);
+    }
+
+    /*========== TOOLS IMAGES ==========*/
+
+    #tools-bg1 {
+        transform: scale(1);
+    }
+
+}
+
+/*========== MEDIA QUERY FOR SCREEN SIZE TILL 1376 ==========*/
+
+@media only screen and (max-width: 1376px) { 
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --h1-font-size: 2.8rem;
+        --h2-font-size: 2.4rem;
+        --small-font-size: 0.9rem;
+    }
+
+    .nav-options-container {
+        gap: 3rem;
+    }
+
+    .home-sign-up-btn {
+        font-size: var(--small-font-size-secondary);
+        padding: 1rem 1rem;
+    }
+
+    .cards-section-container {
+        gap: 2rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 1376px) { 
+
+    .feature-section-container {
+        flex-direction: column;
+        gap: 2rem;
+        height: 120vh;
+    }
+
+    .features-content-container  {
+        width: 100%;
+    }
+
+    .features-frame-container {
+        width: 90%;
+    }
+
+    .features-card-container {
+        bottom: 0vh;
+    }
+
+    .features-bg-container {
+        left: -20vw;
+    }
+
+    .feature-list-container ul li { 
+        font-size: var(--normal-font-size);
+    }
+
+    .footer-options-container {
+        gap: 1.5rem;
+       }
+
+}
+
+/*========== MEDIA QUERY FOR SCREEN SIZE TILL 1200 ==========*/
+
+@media only screen and (max-width: 1200px) { 
+
+    .nav-options-container .nav-item {
+        display: none; 
+    }
+
+    .nav-buttons {
+        display: none; 
+    }
+
+    .toggle-btn {
+        display: flex; 
+    }
+
+    .dropdown-list-container {
+        display: flex; 
+    }
+
+    .dropdown-options-container .nav-item {
+        display: block; 
+    }
+
+    .dd-buttons {
+        display: block; 
+    }
+
+    .feature-card-title {
+        font-size: var(--normal-font-size);
+    }
+
+}
+
+/*========== MEDIA QUERY FOR SCREEN SIZE TILL 1108 ==========*/
+
+@media only screen and (max-width: 1108px) { 
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --biggest-font-size: 3.5rem;
+        --h1-font-size: 2.6rem;
+        --normal-font-size: 1.3rem;
+        --small-font-size: 1rem;
+        --small-font-size-secondary: 0.8rem;
+    }
+
+    .home-content-container {
+        width: 70%;
+    }
+
+    /*========== HOME IMAGES ==========*/
+
+    #student{
+        transform: scale(2.5);
+    }
+
+    #chats {
+        transform: scale(2.5);
+        left: 3vw;
+    }
+
+    #teacher {
+        transform: scale(2.5);
+        left: 1vw;
+    }
+
+    #icons {
+        transform: scale(2.5);
+    }
+
+    .features-content-container
+    {
+        gap: 2rem;
+    }
+
+    .features-content-container a i {
+        font-size: 1rem;
+    }
+
+    .features-frame-container {
+        width: 100%;
+    }
+
+    .sign-up-section-container {
+        padding: 12rem 0;
+    }
+
+    .content-container {
+        width: 70%;
+    }
+
+    .tools-icons-container img {
+        transform: scale(0.8);
+    }
+
+    .container-one {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 955px) { 
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --smallest-font-size: 0.8rem;
+    }
+
+    .footer-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .container-one {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        justify-content: space-between;
+    }
+}
+
+/*========== MEDIA QUERY FOR SCREEN SIZE TILL 850 ==========*/
+
+
+@media only screen and (max-width: 850px)
+{
+    :root {
+        /*========== Font and Typography ==========*/
+        --normal-font-size: 1.1rem;
+    }
+
+    .footer-logo-container{
+        display: none;
+    }
+
+    .footer-list-container {
+        gap: 1.3rem;
+    }
+}
+
+/*========== MEDIA QUERY FOR SCREEN SIZE TILL 800 ==========*/
+
+@media only screen and (max-width: 800px) { 
+    :root {
+
+        --section-padding: 1rem 4rem;
+        /*========== Font and Typography ==========*/
+        --biggest-font-size: 2.5rem;
+        --h1-font-size: 2.4rem;
+        --normal-font-size: 0.8rem;
+        --small-font-size: 1rem;
+        --small-font-size-secondary: 0.6rem;
+    }
+
+    /*========== HOME IMAGES ==========*/
+
+    #student{
+        transform: scale(2.5);
+        top: -13vh;
+    }
+
+    #chats {
+        transform: scale(2.5);
+        top: -15vh;
+        left: -1vw;
+    }
+
+    #teacher {
+        transform: scale(2.5);
+        top: 3vh;
+        left: 1vw;
+    }
+
+    #icons {
+        transform: scale(2.5);
+        top: 9vh;
+        left: -6vw;
+    }
+
+    .home-footer {
+        gap: 2rem;
+    }
+
+    .home-footer img {
+        transform: scale(0.8);
+    }
+
+    .home-container {
+        gap: 2rem;
+    }
+
+    .home-content-container {
+        gap: 2rem;
+    }
+
+    .feature-section-container {
+        padding-top: 3rem;
+        height: 100vh;
+    }
+
+
+    .features-frame-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .features-bg-container {
+        width: 40%;
+        left: -4vw;
+    }
+
+    .features-sparkle-container {
+        width: 20%;
+        top: -10vh;
+    }
+
+    .features-desktop-container {
+        width: 120%;
+        left: 2vw;
+    }
+
+    .features-card-container {
+        bottom: -5vh;
+    }
+
+    .feature-card-title {
+        font-size: var(--small-font-size);
+    }
+
+    .card-arrow  {
+        height: 2.7rem;
+        width: 2.7rem;
+    }
+
+    .sign-up-section-container {
+        padding: 10rem 0;
+    }
+
+    .footer-container {
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem;
+    }
+
+}
+
+/*========== MEDIA QUERY FOR SCREEN SIZE TILL 700 ==========*/
+
+@media only screen and (max-width: 700px) { 
+
+    :root {
+        --section-padding: 1rem 7rem;
+
+        /*========== Font and Typography ==========*/
+        --section-padding: 4rem 3rem;
+        --h1-font-size: 2rem;
+        --h2-font-size: 1rem;
+        --small-font-size: 0.8rem;
+    }
+
+    .nav-options-container a {
+        font-size: 1rem;
+    }
+
+    .content-container {
+        width: 90%;
+    }
+
+    .home-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 300px;
+    }
+
+    /*========== HOME IMAGES ==========*/
+
+    #student{
+        transform: scale(1.1);
+        top: 0vh;
+    }
+
+    #chats {
+        transform: scale(1.1);
+        top: 2vh;
+        left: 6vw;
+    }
+
+    #teacher {
+        transform: scale(1.1);
+        top: 14vh;
+    }
+
+    #icons {
+        transform: scale(1.1);
+        top: 20vh;
+        left: -30vw;
+    }
+
+    .tools-section-container {
+        gap: 2rem;
+        padding-bottom: -4rem;
+        padding-top: 2rem;
+    }
+
+    .tools-icon-slide img {
+        transform: scale(0.6);
+    }
+
+    .feature-section-container {
+        height: 90vh;
+    }
+
+    .features-title p{
+        font-size: var(--h1-font-size);
+    }
+
+    .features-frame-container {
+        height: 60%;
+    }
+
+    .features-card-container {
+        bottom: -8vh;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .feature-card {
+        padding: 1.3rem;
+        height: 15rem;
+    }
+
+    .feature-card-title {
+        font-size: var(--h2-font-size);
+    }
+
+    .card-arrow  {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .card-arrow i {
+        font-size: var(--small-font-size);
+    }
+
+    .sign-up-section-container {
+        padding: 8rem 0;
+    }
+
+}
+
+@media only screen and (max-width: 618px) {
+
+    :root {
+        --h3-font-size: 1.7rem;
+    }
+
+    .tools-icons-container img {
+        padding-left: 0rem;
+    }
+
+    .feature-section-container {
+        height: 120vh;
+    }
+
+    .features-frame-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .features-card-container {
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        top: 30vh;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+}
+
+/*========== MEDIA QUERY FOR SCREEN SIZE TILL 575 ==========*/
+
+@media only screen and (max-width: 575px) {
+    
+    :root {
+        /*========== Font and Typography ==========*/
+        --h1-font-size: 1.6rem;
+        --small-font-size: 0.7rem;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 30vw;
+    }
+
+    .nav-logo {
+        transform: scale(1);
+    }
+
+    .first-row-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .features-card-container {
+        width: 80%;
+    }
+
+    .cards-section-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card-nav-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sign-up-section-container {
+        padding: 3rem 0;
+    }
+
+    .cards-section-container {
+        gap: 0.3rem;
+    }
+
+    .container-two {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list ul {
+        display: none;
+    }
+
+    .sign-up-section-container {
+        padding: 6rem 0;
+    }
+
+    .footer-options-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*========== MEDIA QUERY FOR SCREEN SIZE TILL 500 ==========*/
+
+@media only screen and (max-width: 500px) {
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --biggest-font-size: 2.2rem;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 200px;
+    }
+
+    .home-footer {
+        gap: 1rem;
+    }
+
+    .home-footer img {
+        transform: scale(0.6);
+    }
+
+    /*========== HOME IMAGES ==========*/
+
+    #student{
+        transform: scale(1.3);
+        top: 0vh;
+    }
+
+    #chats {
+        transform: scale(1.3);
+        top: 2vh;
+        left: 6vw;
+    }
+
+    #teacher {
+        transform: scale(1.3);
+        top: 9vh;
+    }
+
+    #icons {
+        transform: scale(1.3);
+        top: 15vh;
+        left: -30vw;
+    }
+
+    .features-card-container {
+        width: 85%;
+    }
+
+    .card {
+        min-width: 150px;
+    }
+
+    .card-arrow  {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .card-arrow i {
+        font-size: var(--small-font-size);
+    }
+}
+
+@media only screen and (max-width: 478px) {
+
+    .feature-section-container {
+        height: 130vh;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .card-img-container {
+        height: 15rem;
+    }
+
+    .features-card-container {
+        top: 20vh;
+        width: 100%;
+    }
+}
+
+/*========== MEDIA QUERY FOR SCREEN SIZE TILL 382 ==========*/
+
+@media only screen and (max-width: 382px) {
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --normal-font-size: 0.7rem;
+        --small-font-size: 0.7rem;
+        
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    /*========== HOME IMAGES ==========*/
+
+    #teacher {
+        transform: scale(1.5);
+        top: 12vh;
+    }
+
+    #icons {
+        transform: scale(1.5);
+        left: -4rem;
+    }
+
+    .home-footer {
+        gap: 0.3rem;
+    }
+
+    .feature-section-container {
+        height: 140vh;
+    }
+
+    .footer-list-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-one {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list-item i {
+        margin-right: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --h3-font-size: 1.2rem;
+    }
+
+    .card-img-container {
+        height: 12rem;
+    }
+}

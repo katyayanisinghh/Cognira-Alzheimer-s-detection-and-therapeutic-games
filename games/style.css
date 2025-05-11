@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Dancing+Script:wght@400..700&display=swap');
+@import url('../assets/css/variables.css');
+
+.games-section {
+    padding: 10rem 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.games-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: fit-content;
+}
+
+.game-card {
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70vw;
+}
+
+.game-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.game-card p {
+    font-size: var(--normal-font-size);
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.game-card .button {
+    background-color: var(--button-color);
+    color: var(--white-color);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-size: var(--normal-font-size);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game-card .button:hover {
+    background-color: var(--hover-red-color);
+}

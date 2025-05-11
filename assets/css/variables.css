@@ -1,0 +1,39 @@
+
+:root {
+    --header-height: 7rem;
+
+    /*========== COLORS ==========*/
+    --primary-color: #0F172A;
+    --bg-color: #F1F5F9;
+    --button-color: #EA580C;
+    --blue-color: #2563EB;
+    --yellow-color: #FACC15;
+    --white-color: #FFFFFF;
+    --bottom-text-color: #475569;
+    --secondary-section-color: #000000;
+    --sub-heading-color: #6d6d6dc0;
+    --hover-red-color: #960000;
+    --footer-list-items: #E2E8F0;
+    --dropdown-bg-color: rgba(225, 225, 225, 0.30);
+
+    /*========== Font and Typography ==========*/
+    --body-font: "Roboto", sans-serif;
+    --biggest-font-size: 4rem;
+    --h1-font-size: 4.5rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 2rem;
+    --normal-font-size: 1.6rem;
+    --small-font-size: 1.5rem;
+    --small-font-size-secondary: 1.3rem;
+    --smallest-font-size: 1rem;
+
+    /*========== FONT WEIGHT ==========*/
+    --font-bold-heavy: 800;
+    --font-bold: 700;
+    --font-semi-bold: 600;
+    --font-semi-bold-secondary: 500;
+
+    /*========== Common Padding ==========*/
+    --nav-padding: 0 7rem;
+    --section-padding: 4rem 7rem;
+}
