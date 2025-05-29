@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Early Detection</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--========== HEADER ==========-->
+  <header>
+    <nav class="nav">
+      <div class="nav-options-container">
+        <div class="nav-logo-container">
+          <a href="../index.html" class="nav-logo">
+            <img src="../assets/img/cognira-logo.png" alt="Logo Image" id="logo-img"/>
+          </a>
+          <p>cognira</p>
+        </div>
+        <div class="nav-item"><a href="#">Detect</a></div>
+        <div class="nav-item"><a href="#">For Caregivers</a></div>
+        <div class="nav-item"><a href="#">Contact Us</a></div>
+        <div class="nav-item"><a href="../games/games.html">Games</a></div>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="button log-in-btn">Log In</button>
+        <button class="button sign-up-btn">Sign Up Now</button>
+      </div>
+    </nav>
+  </header>
+
+  <!--========== MAIN SECTION ==========-->
+  <section class="upload-section">
+    <div class="upload-card">
+      <h2>Upload an Image for Early Detection</h2>
+      <p>Please upload a clear MRI scan or relevant image for our system to analyze for potential signs of Alzheimer's. Accepted formats: JPG, PNG. Max size: 10MB.</p>
+
+      <form id="upload-form" action="/predict" method="post" enctype="multipart/form-data">
+        <label for="file-upload" class="custom-file-upload">Choose Image</label>
+        <input type="file" name="file" id="file-upload" accept="image/*" required />
+
+        <!-- Image preview -->
+        <img id="file-preview" alt="Image preview" style="max-width: 100%; margin-top: 1rem; border-radius: 10px; display: none;" />
+
+        <button type="submit" class="button detect-btn">Submit & Detect</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Toast message container -->
+  <div id="toast"></div>
+
+  <script>
+    const toast = document.getElementById('toast');
+    const fileInput = document.getElementById('file-upload');
+    const form = document.getElementById('upload-form');
+    const filePreview = document.getElementById('file-preview');
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    fileInput.addEventListener('change', () => {
+      if (fileInput.files.length > 0) {
+        const file = fileInput.files[0];
+        showToast(`Selected file: ${file.name}`);
+
+        // Show preview
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          filePreview.src = e.target.result;
+          filePreview.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+      } else {
+        filePreview.style.display = 'none';
+        filePreview.src = '';
+      }
+    });
+
+    // Let the form submit normally (remove e.preventDefault())
+    form.addEventListener('submit', () => {
+      if (fileInput.files.length === 0) {
+        showToast('Please select an image before submitting.');
+        event.preventDefault(); // Prevent submit if no file
+        return;
+      }
+      showToast('Uploading image, please wait...');
+    });
+  </script>
+</body>
+</html>

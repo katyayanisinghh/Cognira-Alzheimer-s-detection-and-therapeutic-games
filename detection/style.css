@@ -1,0 +1,97 @@
+@import url('../assets/css/variables.css');
+
+.upload-section {
+  padding: 8rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+}
+
+.upload-card {
+  background-color: var(--white-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 70vw;
+  max-width: 600px;
+}
+
+.upload-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.upload-card p {
+  font-size: var(--normal-font-size);
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  background-color: var(--button-color);
+  color: var(--white-color);
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--normal-font-size);
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.custom-file-upload:hover {
+  background-color: var(--hover-red-color);
+}
+
+.detect-btn {
+  background-color: var(--button-color);
+  color: var(--white-color);
+  padding: 0.8rem 1.8rem;
+  font-size: var(--normal-font-size);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.detect-btn:hover {
+  background-color: var(--hover-red-color);
+}
+
+/* Toast styles */
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: var(--button-color, #e74c3c);
+  color: var(--white-color, #fff);
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  bottom: 3rem;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+}

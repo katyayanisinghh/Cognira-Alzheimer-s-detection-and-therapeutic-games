@@ -893,11 +893,25 @@ a {
     font-size: var(--smallest-font-size);
 }
 
-.feature-card-button {
-    background-color: var(--white-color);
-    border-radius: 8px;
-    padding: 0.8rem;
-    color: var(--blue-color);
-    font-size: var(--smallest-font-size);
-    border-color: var(--blue-color);
+.feature-card-button.button {
+  /* Override feature-card-button defaults */
+  background-color: var(--button-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;          /* from .button */
+  font-size: var(--small-font-size-secondary);
+  font-weight: var(--font-semi-bold);
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;       /* for links */
 }
+
+.feature-card-button.button:hover {
+  transform: scale(1.05);
+  background-color: var(--hover-red-color);  /* or var(--button-color) if you prefer */
+  color: var(--white-color);
+}
+
